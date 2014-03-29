@@ -18,6 +18,9 @@
 /** View controller showed as content view @see changeContentViewController:closeMenu: */
 @property (nonatomic, strong, readonly) UIViewController *contentViewController;
 
+/** View showed opacity underneath the side menu controller  */
+@property (strong, nonatomic) UIView *opacityView;
+
 /** Menu options parameters @see MVSideMenuOptions */
 @property (nonatomic, copy) MVYSideMenuOptions *options;
 

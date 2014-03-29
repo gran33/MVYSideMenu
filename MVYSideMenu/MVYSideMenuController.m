@@ -27,7 +27,6 @@ typedef struct {
 @property (nonatomic, strong) UIViewController *contentViewController;
 @property (strong, nonatomic) UIView *contentContainerView;
 @property (strong, nonatomic) UIView *menuContainerView;
-@property (strong, nonatomic) UIView *opacityView;
 @property (strong, nonatomic) UIPanGestureRecognizer *panGesture;
 @property (strong, nonatomic) UITapGestureRecognizer *tapGesture;
 
