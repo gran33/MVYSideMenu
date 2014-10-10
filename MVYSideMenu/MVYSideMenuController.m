@@ -9,6 +9,8 @@
 #import "MVYSideMenuController.h"
 #import <QuartzCore/QuartzCore.h>
 
+#import "MVYContentViewController.h"
+
 
 typedef NS_ENUM(NSInteger, MVYSideMenuAction){
 	MVYSideMenuOpen,
@@ -390,8 +392,22 @@ typedef struct {
 		self.menuContainerView.frame = frame;
 		self.opacityView.layer.opacity = self.options.contentViewOpacity;
 		[self.contentContainerView setTransform:CGAffineTransformMakeScale(self.options.contentViewScale, self.options.contentViewScale)];
+        
+        if ([self.contentViewController isKindOfClass:[UINavigationController class]]) {
+            UINavigationController* navigation = ((UINavigationController*)self.contentViewController);
+            if ([[[navigation viewControllers] objectAtIndex:0] isKindOfClass:[MVYContentViewController class]]) {
+                MVYContentViewController* viewController = (MVYContentViewController*)[[navigation viewControllers] objectAtIndex:0];
+                
+                viewController.bg.image = [viewController applyBlurOnImage:viewController.bg.image withRadius:0.9];
+            }
+        }
+        
 	} completion:^(BOOL finished) {
 		[self disableContentInteraction];
+        
+        
+        
+        
 	}];
 }
 

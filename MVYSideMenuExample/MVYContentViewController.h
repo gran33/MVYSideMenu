@@ -10,6 +10,11 @@
 
 @interface MVYContentViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *bg;
+
 - (IBAction)openMenu:(id)sender;
+
+- (UIImage *)applyBlurOnImage: (UIImage *)imageToBlur
+                   withRadius: (CGFloat)blurRadius;
 
 @end

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3841358917E7B48E006BEEFF /* menu_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3841358717E7B48E006BEEFF /* menu_icon@2x.png */; };
+		908FAE1C18E76A7E0006AA56 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 908FAE1B18E76A7E0006AA56 /* bg.png */; };
+		908FAE1E18E76B800006AA56 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908FAE1D18E76B800006AA56 /* CoreImage.framework */; };
 		C2ABB3D2178D680E0041CAF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2ABB3D1178D680E0041CAF1 /* UIKit.framework */; };
 		C2ABB3D4178D680E0041CAF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2ABB3D3178D680E0041CAF1 /* Foundation.framework */; };
 		C2ABB3D6178D680E0041CAF1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2ABB3D5178D680E0041CAF1 /* CoreGraphics.framework */; };
@@ -27,6 +29,8 @@
 
 /* Begin PBXFileReference section */
 		3841358717E7B48E006BEEFF /* menu_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_icon@2x.png"; sourceTree = "<group>"; };
+		908FAE1B18E76A7E0006AA56 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		908FAE1D18E76B800006AA56 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		C2ABB3CE178D680E0041CAF1 /* MVYSideMenuExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVYSideMenuExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2ABB3D1178D680E0041CAF1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C2ABB3D3178D680E0041CAF1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -57,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				908FAE1E18E76B800006AA56 /* CoreImage.framework in Frameworks */,
 				C2ABB3D2178D680E0041CAF1 /* UIKit.framework in Frameworks */,
 				C2ABB3D4178D680E0041CAF1 /* Foundation.framework in Frameworks */,
 				C2ABB3D6178D680E0041CAF1 /* CoreGraphics.framework in Frameworks */,
@@ -103,6 +108,7 @@
 		C2ABB3D0178D680E0041CAF1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				908FAE1D18E76B800006AA56 /* CoreImage.framework */,
 				C2ABB3D1178D680E0041CAF1 /* UIKit.framework */,
 				C2ABB3D3178D680E0041CAF1 /* Foundation.framework */,
 				C2ABB3D5178D680E0041CAF1 /* CoreGraphics.framework */,
@@ -123,6 +129,7 @@
 				C2ABB400178D6A120041CAF1 /* MVYContentViewController.h */,
 				C2ABB401178D6A120041CAF1 /* MVYContentViewController.m */,
 				C2ABB402178D6A120041CAF1 /* MVYContentViewController.xib */,
+				908FAE1B18E76A7E0006AA56 /* bg.png */,
 			);
 			path = MVYSideMenuExample;
 			sourceTree = "<group>";
@@ -206,6 +213,7 @@
 			files = (
 				C2ABB3DC178D680E0041CAF1 /* InfoPlist.strings in Resources */,
 				C2ABB3E4178D680E0041CAF1 /* Default.png in Resources */,
+				908FAE1C18E76A7E0006AA56 /* bg.png in Resources */,
 				C2ABB3E6178D680E0041CAF1 /* Default@2x.png in Resources */,
 				C2ABB3E8178D680E0041CAF1 /* Default-568h@2x.png in Resources */,
 				C2ABB3FF178D69FE0041CAF1 /* MVYMenuViewController.xib in Resources */,
